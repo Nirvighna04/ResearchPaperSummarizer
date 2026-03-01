@@ -8,7 +8,7 @@ from langchain.schema import HumanMessage
 from langchain.prompts import PromptTemplate
 
 # Initialize Together AI API
-TOGETHER_API_KEY = "a4bbfdc06c30d83c997ade406d4233cf6b26a9fbbf049324b022f39fb0af4f1a"
+TOGETHER_API_KEY = ""
 client = Together(api_key=TOGETHER_API_KEY)
 
 # Initialize LangChain Chat Model
@@ -90,3 +90,4 @@ if uploaded_file:
             st.download_button("Download Summary", summary, "summary.txt", "text/plain")
         else:
             st.error("Failed to generate a summary. Please try again.")
+
